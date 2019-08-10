@@ -141,7 +141,7 @@ namespace {
         else if (backward)
             score -= Backward + WeakUnopposed * int(!opposed);
 
-        if (doubled && !support)
+        if (doubled && !support && !lever)
             score -= Doubled;
     }
 
